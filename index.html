@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Before She Was Our Lady: The Untold Life of Mary of Nazareth, by Francesco Tamburriello. 33 short chapters, 8 illustrations, 8 Quiet Moments for groups. Available on Amazon in paperback, hardcover and Kindle.">
+<meta property="og:title" content="Before She Was Our Lady">
+<meta property="og:description" content="She speaks six times in the Bible. This book tells the rest.">
+<meta property="og:image" content="https://beforeshewasourlady.com/cover.jpg">
+<meta property="og:url" content="https://beforeshewasourlady.com/">
+<link rel="icon" href="favicon.png">
+<title>Before She Was Our Lady</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+html,body{margin:0}
+
+/* Layout: a night-blue opening with the cover, then cream pages like the book itself, one column, 65-character measure. Single look by choice: the colors are the cover's. */
+:root{
+  --night:#17233d; --night-2:#0f1830; --cream:#f5efe1; --cream-2:#ece3cf; --ink:#1e1a14; --ink-soft:#5a5244; --gold:#c6a24e; --gold-deep:#9d7c2f; --rule:#d9ceb4;
+  --display:"Cormorant Garamond","Garamond","Times New Roman",serif;
+  --body:"EB Garamond","Garamond","Georgia",serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:1.125rem;line-height:1.6}
+a{color:var(--gold-deep)}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.1;text-wrap:balance;margin:0}
+.wrap{max-width:68rem;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+.eyebrow{font-family:var(--body);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem}
+
+/* Hero */
+.hero{background:radial-gradient(120% 90% at 70% 10%,#243457 0%,var(--night) 55%,var(--night-2) 100%);color:var(--cream);padding-block:clamp(2.5rem,6vw,5rem)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(1.5rem,5vw,4rem);align-items:center}
+.hero img{width:min(100%,380px);margin-inline:auto;box-shadow:0 30px 60px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06)}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:500}
+.hero h1 b{display:block;font-weight:700;letter-spacing:.01em}
+.hero .sub{font-family:var(--display);font-style:italic;font-size:clamp(1.2rem,2.4vw,1.6rem);margin:.6rem 0 1.4rem;color:#e4dcc6}
+.hero .hook{font-size:1.2rem;max-width:34rem;color:#f1ead8}
+.hero .by{margin-top:1.2rem;color:#cfc6ad}
+.buy{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.6rem}
+.btn{display:inline-flex;flex-direction:column;align-items:flex-start;gap:.1rem;padding:.75rem 1.1rem;border:1px solid var(--gold);color:var(--cream);text-decoration:none;font-family:var(--body);min-width:9.5rem;background:rgba(255,255,255,.03)}
+.btn span{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.btn strong{font-weight:500;font-size:1.05rem}
+.btn:hover,.btn:focus-visible{background:var(--gold);color:var(--night);outline:none}
+.btn:hover span,.btn:focus-visible span{color:var(--night)}
+.soon{margin-top:.8rem;font-size:.95rem;color:#cfc6ad}
+
+/* Sections */
+section{padding-block:clamp(2.5rem,6vw,4.5rem)}
+section+section{border-top:1px solid var(--rule)}
+h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:1.2rem}
+.prose{max-width:38rem}
+.prose p{margin:0 0 1rem}
+.two{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(1.5rem,5vw,4rem);align-items:start}
+.inside ul{list-style:none;padding:0;margin:1.2rem 0 0;display:grid;gap:.9rem}
+.inside li{padding-left:1.4rem;position:relative}
+.inside li::before{content:"";position:absolute;left:0;top:.72em;width:.6rem;height:1px;background:var(--gold)}
+.inside li b{font-weight:500}
+.plate{border:1px solid var(--rule);padding:.6rem;background:var(--cream-2)}
+.plate figcaption{font-family:var(--display);font-style:italic;font-size:1.05rem;padding:.7rem .3rem .2rem;color:var(--ink-soft)}
+
+/* Sample chapter */
+.chapter{background:var(--cream-2)}
+.chapter .head{text-align:center;margin-bottom:2rem}
+.chapter .head .eyebrow{color:var(--gold-deep)}
+.chapter h3{font-size:clamp(1.7rem,3.5vw,2.3rem)}
+.chapter .where{font-style:italic;color:var(--ink-soft);margin-top:.4rem}
+.chapter .prose{margin-inline:auto}
+.chapter .prose>p:first-of-type::first-letter{font-family:var(--display);font-size:3.6em;float:left;line-height:.8;padding:.08em .08em 0 0;color:var(--night)}
+.verse{text-align:center;font-family:var(--display);font-style:italic;font-size:1.2rem;margin-top:2rem;color:var(--night)}
+.verse small{display:block;font-style:normal;font-family:var(--body);font-size:.9rem;letter-spacing:.1em;color:var(--ink-soft);margin-top:.3rem}
+
+/* Groups */
+.groups .two{align-items:stretch}
+.qm{background:var(--night);color:var(--cream);padding:1.6rem;display:flex;flex-direction:column;gap:.9rem}
+.qm .eyebrow{margin-bottom:0}
+.qm ol{margin:0;padding-left:1.2rem;display:grid;gap:.7rem}
+form{display:grid;gap:.8rem;margin-top:1.2rem;max-width:30rem}
+label{display:grid;gap:.3rem;font-size:.95rem;color:var(--ink-soft)}
+input,textarea,select{font:inherit;padding:.6rem .7rem;border:1px solid var(--rule);background:#fff;color:var(--ink);width:100%}
+input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
+.send{justify-self:start;background:var(--night);color:var(--cream);border:0;padding:.75rem 1.3rem;font:inherit;cursor:pointer}
+.send:hover,.send:focus-visible{background:var(--gold-deep);outline:none}
+.note{padding:1rem;border:1px solid var(--gold);background:#fff8e6;display:grid;gap:.5rem}
+.note[hidden]{display:none}
+.note code{font-family:var(--body);font-size:1.05rem;user-select:all;color:var(--night)}
+.copy{justify-self:start;font:inherit;font-size:.9rem;padding:.35rem .7rem;border:1px solid var(--gold-deep);background:transparent;color:var(--gold-deep);cursor:pointer}
+
+/* Author */
+.author .two{grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr);align-items:center}
+.author img{border-radius:50%;width:min(100%,280px);margin-inline:auto;box-shadow:0 10px 30px rgba(23,35,61,.25)}
+
+/* Footer */
+footer{background:var(--night);color:#cfc6ad;padding-block:2.2rem;font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center}
+footer a{color:var(--cream)}
+
+@media (max-width:760px){
+  .hero .wrap,.two,.author .two{grid-template-columns:1fr}
+  .hero{text-align:center}
+  .hero .hook,.hero .buy{margin-inline:auto;justify-content:center}
+  .btn{align-items:center}
+  .hero img{width:min(100%,220px)}
+  .hero{padding-block:2rem}
+}
+@media (prefers-reduced-motion:no-preference){
+  .hero img{animation:rise 1.1s ease-out both}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+
+
+<header class="hero">
+  <div class="wrap">
+    <img src="cover.jpg" width="900" height="1391" alt="Front cover of Before She Was Our Lady: a young Mary in a blue veil holding a spindle at the door of a stone house at night">
+    <div>
+      <p class="eyebrow">A book by Francesco Tamburriello</p>
+      <h1>Before She Was <b>Our Lady</b></h1>
+      <p class="sub">The Untold Life of Mary of Nazareth</p>
+      <p class="hook">She speaks six times in the Bible. This book tells the rest.</p>
+      <p class="by">33 short chapters. 8 illustrations by Ana Maria Camejo. 8 Quiet Moments for groups and prayer.</p>
+      <div class="buy" id="buy">
+        <a class="btn" id="buy-pb" href="#buy"><span>Paperback</span><strong>$16.99</strong></a>
+        <a class="btn" id="buy-hc" href="#buy"><span>Hardcover</span><strong>$24.99</strong></a>
+        <a class="btn" id="buy-kd" href="#buy"><span>Kindle</span><strong>$6.99</strong></a>
+      </div>
+      <p class="soon" id="soon">Coming to Amazon in October 2026. Kindle Unlimited included.</p>
+    </div>
+  </div>
+</header>
+
+<section class="about">
+  <div class="wrap two">
+    <div class="prose">
+      <p class="eyebrow">The book</p>
+      <h2>Not a statue. A woman.</h2>
+      <p>Before the statues, before the titles, before the feast days, Mary was a girl in a village nobody noticed. She was afraid. She worked with her hands. She buried her parents and her husband. She waited, and she did not always understand, and she said yes anyway.</p>
+      <p>This is her life in thirty-three short chapters, from a house at the edge of Nazareth to a room in Jerusalem after Easter. You will walk the road to Bethlehem with her, cross a desert with a child in her arms, count the bread when the crowds begin to leave, and stand where she stood when there was nothing left to do but stay.</p>
+      <p>Each chapter ends with a verse. Each part closes with a pause for prayer and conversation, for a quiet evening, a parish group, or a pilgrimage.</p>
+      <p>Meet her as she was. You may find that she leads you, as she always has, to her Son.</p>
+    </div>
+    <div class="inside">
+      <p class="eyebrow">Inside</p>
+      <ul>
+        <li><b>33 short chapters</b>, each about ten minutes, each ending with a verse of Scripture (RSV, Second Catholic Edition).</li>
+        <li><b>Eight Quiet Moments</b> with three questions for groups or private prayer.</li>
+        <li><b>Eight full-page illustrations</b> by Ana Maria Camejo.</li>
+        <li><b>Her Life at a Glance</b>, a timeline from Nazareth to Jerusalem.</li>
+        <li><b>Things Nobody Told You About Her</b>: twelve facts and traditions most Catholics never heard.</li>
+        <li><b>A reading plan</b> that ends on December 8, the Immaculate Conception, and the Prayer to Our Lady of Lourdes.</li>
+        <li><b>A Note on Sources</b> that says plainly what comes from Scripture, what from tradition, and where imagination begins.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="plates">
+  <div class="wrap two">
+    <figure class="plate">
+      <img src="plate1.jpg" width="672" height="900" alt="Illustration: a girl at the door of a stone house in Nazareth hands a ball of thread to another girl, while her mother watches from the doorway">
+      <figcaption>After chapters 1 to 4. "For he has regarded the low estate of his handmaiden." Luke 1:48</figcaption>
+    </figure>
+    <div class="prose">
+      <p class="eyebrow">The illustrations</p>
+      <h2>One picture after every part.</h2>
+      <p>The book is divided into eight parts. At the end of each one, a full-page illustration by Ana Maria Camejo and a short page called A Quiet Moment: a few paragraphs to think about what you have read, and three questions to carry with you or to bring to a group.</p>
+      <p>The paperback and hardcover are printed on cream paper, 5.5 by 8.5 inches, with a matte cover. The Kindle edition keeps all eight illustrations.</p>
+    </div>
+  </div>
+</section>
+
+<section class="chapter">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Read the first chapter</p>
+      <h3>Chapter 1: The House at the Edge</h3>
+      <p class="where">Mary, newborn. Nazareth.</p>
+    </div>
+    <div class="prose">
+      <p>The house stood at the edge of Nazareth, stone walls the color of the hills around it, close enough to the fields that in summer the smell of wheat drifted through the open door.</p>
+      <p>Anna's labor began in the night. When the sky turned gray over the hills it was still going, and by the time the sun cleared the ridge a cry rose from inside the house, small and clear, and Joachim, waiting outside with his hands pressed together, knew before anyone told him that his daughter had been born.</p>
+      <p>He stood there, breathing, as though he needed to be sure the sound was real.</p>
+      <p>When he was let in, Anna was holding the child against her shoulder, her face wet. Joachim knelt beside the bed and, not knowing what to do with his hands, took the edge of the blanket and straightened it.</p>
+      <p>"What do we call her?" Anna asked.</p>
+      <p>"Mary," Joachim said. They had chosen the name years before, not knowing if they would ever need it.</p>
+      <p>By noon the neighbors were at the door. They came in to look at the baby and stayed longer than they meant to, saying very little.</p>
+      <p>No one in Nazareth asked why a couple would weep so hard over one daughter. They did not know that Joachim had once walked out of the Temple with a pair of lambs still in his arms.</p>
+      <p class="verse">"For he has regarded the low estate of his handmaiden."<small>Luke 1:48</small></p>
+    </div>
+  </div>
+</section>
+
+<section class="groups">
+  <div class="wrap two">
+    <div>
+      <p class="eyebrow">For parishes and groups</p>
+      <h2>Read it together.</h2>
+      <div class="prose">
+        <p>The book was written to be read in company: a parish group through Advent, a Legion of Mary praesidium, a pilgrimage, a family at the kitchen table. Start on November 6 and the thirty-third day is December 8, the Immaculate Conception. Start on July 14 and it is August 15, the Assumption.</p>
+        <p>Parishes, Catholic bookshops and shrine gift shops can order directly from me. 5 to 19 copies: 30% off the list price. 20 copies or more: 40% off. Shipping in the United States included. Payment by invoice, due when the books arrive. Copies signed on request. The books are printed to order, so please allow two weeks from your order to delivery. Orders are final; I am not able to take returns.</p>
+        <p>Tell me how many copies you need and where to send them, and you will have an answer within two days. If your parish would like a book evening or a talk with the Quiet Moment questions, say so in the message.</p>
+      </div>
+      <form id="order">
+        <label>Your name <input id="f-name" name="name" required autocomplete="name"></label>
+        <label>Parish, shop or group <input id="f-org" name="org"></label>
+        <label>Email <input id="f-email" name="email" type="email" required autocomplete="email"></label>
+        <label>How many copies, and anything else <textarea id="f-msg" name="message" rows="3"></textarea></label>
+        <button class="send" type="submit">Request copies</button>
+      </form>
+      <div class="note" id="order-note" hidden>
+        <strong>Your email program should have opened with the request filled in. If it did not, write to:</strong>
+        <code id="order-email">tambufra@gmail.com</code>
+        <button class="copy" type="button" id="copy-email">Copy the address</button>
+        <span id="copy-done" hidden>Copied.</span>
+      </div>
+    </div>
+    <aside class="qm">
+      <p class="eyebrow">A Quiet Moment, chapters 1 to 4</p>
+      <p style="margin:0;font-family:var(--display);font-size:1.35rem;font-style:italic">What do you do with your own ball of thread?</p>
+      <ol>
+        <li>Is there a prayer you have kept praying long after you stopped expecting an answer? What keeps you at it?</li>
+        <li>When has someone judged you for something you did not choose? What helped you carry it?</li>
+        <li>What small, unseen thing do you do every day that you would be sorry to see disappear?</li>
+      </ol>
+      <p style="margin:0;font-size:.95rem;color:#cfc6ad">Eight pages like this one, with questions, are inside the book. Groups may copy them freely.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="author">
+  <div class="wrap two">
+    <img src="author.jpg" width="700" height="700" alt="Francesco Tamburriello, smiling, outdoors under a bright sky">
+    <div class="prose">
+      <p class="eyebrow">About the author</p>
+      <h2>Francesco Tamburriello</h2>
+      <p>Francesco Tamburriello was born in Turin, Italy, into a Catholic family. After a pilgrimage to Lourdes with his daughter in 2019, he could not stop thinking about Mary as a real woman. This book is the result.</p>
+      <p>He lives in Sarasota, Florida.</p>
+      <p><a href="https://www.instagram.com/before_she_was_our_lady/" target="_blank" rel="noopener">Follow the book on Instagram: @before_she_was_our_lady</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Before She Was Our Lady: The Untold Life of Mary of Nazareth. Copyright 2026 Francesco Tamburriello, Sarasota, Florida.</div>
+    <div>Paperback ISBN 979-8-9821277-0-9. Hardcover ISBN 979-8-9821277-7-8.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Buy links: paste each Amazon URL the day that format is live. Each button goes live on its own.
+  var links={pb:"",hc:"",kd:""};
+  var anyLive=false;
+  ["pb","hc","kd"].forEach(function(k){
+    var a=document.getElementById("buy-"+k);
+    if(links[k]){a.href=links[k];a.target="_blank";a.rel="noopener";anyLive=true;}
+    else{a.addEventListener("click",function(e){e.preventDefault();document.getElementById("soon").textContent="This edition is coming to Amazon in October 2026. Thank you for waiting.";});}
+  });
+  if(anyLive){document.getElementById("soon").textContent="Available now on Amazon. Kindle Unlimited included.";}
+  var form=document.getElementById("order");
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    var n=document.getElementById("f-name").value.trim();
+    var o=document.getElementById("f-org").value.trim();
+    var em=document.getElementById("f-email").value.trim();
+    var m=document.getElementById("f-msg").value.trim();
+    var to=document.getElementById("order-email").textContent;
+    var subject="Copies of Before She Was Our Lady"+(o?" for "+o:"");
+    var body="Name: "+n+"\nParish, shop or group: "+o+"\nEmail: "+em+"\n\n"+m;
+    location.href="mailto:"+to+"?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+    var note=document.getElementById("order-note");
+    note.hidden=false;
+    note.scrollIntoView({behavior:"smooth",block:"center"});
+  });
+  document.getElementById("copy-email").addEventListener("click",function(){
+    var t=document.getElementById("order-email").textContent;
+    var done=function(){document.getElementById("copy-done").hidden=false;};
+    var select=function(){var r=document.createRange();r.selectNodeContents(document.getElementById("order-email"));var s=getSelection();s.removeAllRanges();s.addRange(r);};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,select);}
+    else{select();}
+  });
+})();
+</script>
+
+</body>
+</html>
