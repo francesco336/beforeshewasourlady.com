@@ -10,6 +10,10 @@
 <meta property="og:url" content="https://beforeshewasourlady.com/">
 <link rel="icon" href="favicon.png">
 <title>Before She Was Our Lady</title>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Book","name":"Before She Was Our Lady: The Untold Life of Mary of Nazareth","author":{"@type":"Person","name":"Francesco Tamburriello"},"illustrator":{"@type":"Person","name":"Ana Maria Camejo"},"inLanguage":"en","image":"https://beforeshewasourlady.com/cover.jpg","url":"https://beforeshewasourlady.com/","numberOfPages":145,
+"workExample":[{"@type":"Book","bookFormat":"https://schema.org/Paperback","isbn":"9798982127709","offers":{"@type":"Offer","price":"16.99","priceCurrency":"USD"}},{"@type":"Book","bookFormat":"https://schema.org/Hardcover","isbn":"9798982127778","offers":{"@type":"Offer","price":"24.99","priceCurrency":"USD"}},{"@type":"Book","bookFormat":"https://schema.org/EBook","offers":{"@type":"Offer","price":"6.99","priceCurrency":"USD"}}]}
+</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
 <style>
 html,body{margin:0}
@@ -57,7 +61,8 @@ h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:1.2rem}
 .inside li{padding-left:1.4rem;position:relative}
 .inside li::before{content:"";position:absolute;left:0;top:.72em;width:.6rem;height:1px;background:var(--gold)}
 .inside li b{font-weight:500}
-.plate{border:1px solid var(--rule);padding:.6rem;background:var(--cream-2)}
+.plate{border:1px solid var(--rule);padding:.6rem;background:var(--cream-2);margin:0}
+.two>*{min-width:0}
 .plate figcaption{font-family:var(--display);font-style:italic;font-size:1.05rem;padding:.7rem .3rem .2rem;color:var(--ink-soft)}
 
 /* Sample chapter */
@@ -72,7 +77,8 @@ h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:1.2rem}
 .verse small{display:block;font-style:normal;font-family:var(--body);font-size:.9rem;letter-spacing:.1em;color:var(--ink-soft);margin-top:.3rem}
 
 /* Groups */
-.groups .two{align-items:stretch}
+.groups .two{align-items:start}
+.groups .qm{position:sticky;top:1.5rem}
 .qm{background:var(--night);color:var(--cream);padding:1.6rem;display:flex;flex-direction:column;gap:.9rem}
 .qm .eyebrow{margin-bottom:0}
 .qm ol{margin:0;padding-left:1.2rem;display:grid;gap:.7rem}
@@ -86,6 +92,45 @@ input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px soli
 .note[hidden]{display:none}
 .note code{font-family:var(--body);font-size:1.05rem;user-select:all;color:var(--night)}
 .copy{justify-self:start;font:inherit;font-size:.9rem;padding:.35rem .7rem;border:1px solid var(--gold-deep);background:transparent;color:var(--gold-deep);cursor:pointer}
+
+/* Buy buttons on cream backgrounds, and the group link under the hero buttons */
+.buy.light .btn{color:var(--night);border-color:var(--gold-deep);background:#fff}
+.buy.light .btn span{color:var(--gold-deep)}
+.buy.light .btn:hover,.buy.light .btn:focus-visible{background:var(--night);color:var(--cream)}
+.buy.light .btn:hover span,.buy.light .btn:focus-visible span{color:var(--gold)}
+.buy.center{justify-content:center}
+.grouplink{margin-top:.6rem;font-size:.95rem}
+.hero .grouplink a{color:var(--gold)}
+.soon-light{text-align:center;margin-top:.8rem;font-size:.95rem;color:var(--ink-soft)}
+
+/* What you will discover */
+.discover ol{list-style:none;counter-reset:d;padding:0;margin:1.6rem 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1.4rem 2.2rem}
+.discover li{counter-increment:d;padding-top:.9rem;border-top:1px solid var(--gold)}
+.discover li::before{content:counter(d);display:block;font-family:var(--display);font-size:1.6rem;color:var(--gold-deep);line-height:1;margin-bottom:.4rem}
+.discover li b{display:block;font-family:var(--display);font-size:1.3rem;font-weight:600;line-height:1.2;margin-bottom:.3rem}
+
+/* Parish and group kit */
+.prices{width:100%;max-width:34rem;border-collapse:collapse;margin:1.2rem 0 1.4rem;font-size:1rem}
+.prices th,.prices td{text-align:left;padding:.55rem .6rem;border-bottom:1px solid var(--rule)}
+.prices th{font-weight:500;color:var(--ink-soft);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase}
+.prices td.num{font-variant-numeric:tabular-nums}
+.kitlist{list-style:none;padding:0;margin:0 0 1.2rem;display:grid;gap:.6rem}
+.kitlist li{padding-left:1.4rem;position:relative}
+.kitlist li::before{content:"";position:absolute;left:0;top:.72em;width:.6rem;height:1px;background:var(--gold)}
+.bulletin{border:1px dashed var(--gold-deep);background:#fff;padding:1rem 1.1rem;margin-top:1.4rem;display:grid;gap:.6rem}
+.bulletin p{margin:0;font-size:1rem}
+.bulletin .label{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep)}
+
+/* Email signup */
+.signup{background:radial-gradient(120% 90% at 30% 0%,#243457 0%,var(--night) 60%,var(--night-2) 100%);color:var(--cream);text-align:center}
+.signup h2{color:var(--cream)}
+.signup .prose{margin-inline:auto;color:#e4dcc6}
+.signup form{margin:1.4rem auto 0;grid-template-columns:minmax(0,1fr) auto;max-width:32rem;align-items:end}
+.signup label{color:#cfc6ad;text-align:left}
+.signup .send{background:var(--gold);color:var(--night)}
+.signup .send:hover,.signup .send:focus-visible{background:var(--cream)}
+.signup .small{font-size:.9rem;color:#cfc6ad;margin-top:.8rem}
+@media (max-width:560px){.signup form{grid-template-columns:1fr}}
 
 /* Author */
 .author .two{grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr);align-items:center}
@@ -123,14 +168,31 @@ footer a{color:var(--cream)}
       <p class="hook">She speaks six times in the Bible. This book tells the rest.</p>
       <p class="by">33 short chapters. 8 illustrations by Ana Maria Camejo. 8 Quiet Moments for groups and prayer.</p>
       <div class="buy" id="buy">
-        <a class="btn" id="buy-pb" href="#buy"><span>Paperback</span><strong>$16.99</strong></a>
-        <a class="btn" id="buy-hc" href="#buy"><span>Hardcover</span><strong>$24.99</strong></a>
-        <a class="btn" id="buy-kd" href="#buy"><span>Kindle</span><strong>$6.99</strong></a>
+        <a class="btn" data-buy="pb" href="#buy"><span>Paperback</span><strong>$16.99</strong></a>
+        <a class="btn" data-buy="hc" href="#buy"><span>Hardcover</span><strong>$24.99</strong></a>
+        <a class="btn" data-buy="kd" href="#buy"><span>Kindle</span><strong>$6.99</strong></a>
       </div>
-      <p class="soon" id="soon">Coming to Amazon in October 2026. Kindle Unlimited included.</p>
+      <p class="soon" data-soon>Coming to Amazon in October 2026. Kindle Unlimited included.</p>
+      <p class="grouplink">Ordering for a parish or a group? <a href="#groups">See group prices</a></p>
     </div>
   </div>
 </header>
+
+<section class="discover">
+  <div class="wrap">
+    <p class="eyebrow">What you will discover</p>
+    <h2>The years the Gospels leave out.</h2>
+    <ol>
+      <li><b>The girl before the titles</b>A child at the edge of Nazareth who lost her parents young, learned to spin wool, and said yes before she understood.</li>
+      <li><b>Everything she says, in two minutes</b>Mary speaks six times in the Gospels. You will hear each line in the moment she said it.</li>
+      <li><b>Joseph, up close</b>What it cost him to take her home, and the six nights before he did.</li>
+      <li><b>The hidden years</b>A desert crossing, a foreign city, a carpenter's workshop, and a house of two after Joseph died.</li>
+      <li><b>Her story beside yours</b>Eight Quiet Moments with three questions each, for prayer alone or for a group.</li>
+      <li><b>What is Scripture, what is tradition</b>A plain Note on Sources, so you always know where the Gospels end and imagination begins.</li>
+      <li><b>Twelve things nobody told you</b>From a second-century text the Church never placed in the Bible to a girl at Lourdes in 1858.</li>
+    </ol>
+  </div>
+</section>
 
 <section class="about">
   <div class="wrap two">
@@ -189,19 +251,56 @@ footer a{color:var(--cream)}
       <p>By noon the neighbors were at the door. They came in to look at the baby and stayed longer than they meant to, saying very little.</p>
       <p>No one in Nazareth asked why a couple would weep so hard over one daughter. They did not know that Joachim had once walked out of the Temple with a pair of lambs still in his arms.</p>
       <p class="verse">"For he has regarded the low estate of his handmaiden."<small>Luke 1:48</small></p>
+      <p class="soon-light" style="margin-top:2.4rem">Thirty-two chapters to go.</p>
+      <div class="buy light center">
+        <a class="btn" data-buy="pb" href="#buy"><span>Paperback</span><strong>$16.99</strong></a>
+        <a class="btn" data-buy="hc" href="#buy"><span>Hardcover</span><strong>$24.99</strong></a>
+        <a class="btn" data-buy="kd" href="#buy"><span>Kindle</span><strong>$6.99</strong></a>
+      </div>
+      <p class="soon-light" data-soon>Coming to Amazon in October 2026. Kindle Unlimited included.</p>
     </div>
   </div>
 </section>
 
-<section class="groups">
+<section class="signup" id="readalong">
+  <div class="wrap">
+    <p class="eyebrow">Read along, November 6 to December 8</p>
+    <h2>One chapter a day to the Immaculate Conception.</h2>
+    <div class="prose">
+      <p>Leave your email and I will send you the 33-day reading plan, with the Quiet Moment questions on one page, and a short note each week while we read.</p>
+    </div>
+    <form id="signup">
+      <label>Your email <input id="s-email" name="email" type="email" required autocomplete="email"></label>
+      <button class="send" type="submit">Send me the plan</button>
+    </form>
+    <p class="small" id="signup-note">No spam. One note a week, until December 8.</p>
+  </div>
+</section>
+
+<section class="groups" id="groups">
   <div class="wrap two">
     <div>
-      <p class="eyebrow">For parishes and groups</p>
+      <p class="eyebrow">Parish and Group Kit</p>
       <h2>Read it together.</h2>
       <div class="prose">
         <p>The book was written to be read in company: a parish group through Advent, a Legion of Mary praesidium, a pilgrimage, a family at the kitchen table. Start on November 6 and the thirty-third day is December 8, the Immaculate Conception. Start on July 14 and it is August 15, the Assumption.</p>
-        <p>Parishes, Catholic bookshops and shrine gift shops can order directly from me. 5 to 19 copies: 30% off the list price. 20 copies or more: 40% off. Shipping in the United States included. Payment by invoice, due when the books arrive. Copies signed on request. The books are printed to order, so please allow two weeks from your order to delivery. Orders are final; I am not able to take returns.</p>
-        <p>Tell me how many copies you need and where to send them, and you will have an answer within two days. If your parish would like a book evening or a talk with the Quiet Moment questions, say so in the message.</p>
+      </div>
+      <table class="prices">
+        <thead><tr><th>Copies</th><th>Paperback</th><th>Hardcover</th></tr></thead>
+        <tbody>
+          <tr><td>1 to 4</td><td class="num">$16.99</td><td class="num">$24.99</td></tr>
+          <tr><td>5 to 19 (30% off)</td><td class="num">$11.89 each</td><td class="num">$17.49 each</td></tr>
+          <tr><td>20 or more (40% off)</td><td class="num">$10.19 each</td><td class="num">$14.99 each</td></tr>
+        </tbody>
+      </table>
+      <ul class="kitlist">
+        <li><b>Shipping in the United States included</b> on group orders. Payment by invoice, due when the books arrive.</li>
+        <li><b>The 33-day reading plan</b> and the eight Quiet Moment pages, free to copy for your group.</li>
+        <li><b>Copies signed on request.</b></li>
+        <li><b>A book evening or a talk</b> for your parish, if you would like one. Say so in the message.</li>
+      </ul>
+      <div class="prose">
+        <p>Parishes, Catholic bookshops and shrine gift shops order directly from me. For 1 to 4 copies, please order on Amazon. The books are printed to order, so please allow two weeks from your order to delivery. Orders are final; I am not able to take returns. Tell me how many copies you need and where to send them, and you will have an answer within two days.</p>
       </div>
       <form id="order">
         <label>Your name <input id="f-name" name="name" required autocomplete="name"></label>
@@ -212,9 +311,14 @@ footer a{color:var(--cream)}
       </form>
       <div class="note" id="order-note" hidden>
         <strong>Your email program should have opened with the request filled in. If it did not, write to:</strong>
-        <code id="order-email">tambufra@gmail.com</code>
+        <code id="order-email">hello@beforeshewasourlady.com</code>
         <button class="copy" type="button" id="copy-email">Copy the address</button>
         <span id="copy-done" hidden>Copied.</span>
+      </div>
+      <div class="bulletin">
+        <span class="label">For your parish bulletin, free to copy</span>
+        <p id="bulletin-text">Read along with Mary this Advent. Before She Was Our Lady: The Untold Life of Mary of Nazareth, by Francesco Tamburriello, tells her life in thirty-three short chapters. Read one a day from November 6 and you finish on December 8, the Immaculate Conception. Each part ends with questions for prayer or a small group. Available on Amazon. Group copies at beforeshewasourlady.com.</p>
+        <button class="copy" type="button" id="copy-bulletin">Copy the text</button>
       </div>
     </div>
     <aside class="qm">
@@ -238,8 +342,22 @@ footer a{color:var(--cream)}
       <h2>Francesco Tamburriello</h2>
       <p>Francesco Tamburriello was born in Turin, Italy, into a Catholic family. After a pilgrimage to Lourdes with his daughter in 2019, he could not stop thinking about Mary as a real woman. This book is the result.</p>
       <p>He lives in Sarasota, Florida.</p>
-      <p><a href="https://www.instagram.com/before_she_was_our_lady/" target="_blank" rel="noopener">Follow the book on Instagram: @before_she_was_our_lady</a></p>
+      <p>Follow the book on <a href="https://www.instagram.com/before_she_was_our_lady/" target="_blank" rel="noopener">Instagram</a> and <a href="https://www.facebook.com/profile.php?id=61595425618536" target="_blank" rel="noopener">Facebook</a>. Write to me at <a href="mailto:hello@beforeshewasourlady.com">hello@beforeshewasourlady.com</a>.</p>
     </div>
+  </div>
+</section>
+
+<section class="closing chapter">
+  <div class="wrap" style="text-align:center">
+    <p class="eyebrow">Before She Was Our Lady</p>
+    <h2>Meet her as she was.</h2>
+    <div class="buy light center">
+      <a class="btn" data-buy="pb" href="#buy"><span>Paperback</span><strong>$16.99</strong></a>
+      <a class="btn" data-buy="hc" href="#buy"><span>Hardcover</span><strong>$24.99</strong></a>
+      <a class="btn" data-buy="kd" href="#buy"><span>Kindle</span><strong>$6.99</strong></a>
+    </div>
+    <p class="soon-light" data-soon>Coming to Amazon in October 2026. Kindle Unlimited included.</p>
+    <p class="soon-light"><a href="#groups">Group prices for parishes and shops</a></p>
   </div>
 </section>
 
@@ -253,14 +371,30 @@ footer a{color:var(--cream)}
 <script>
 (function(){
   // Buy links: paste each Amazon URL the day that format is live. Each button goes live on its own.
-  var links={pb:"",hc:"",kd:""};
+  var links={pb:"https://www.amazon.com/dp/B0HNHNNSDR",hc:"https://www.amazon.com/dp/B0HNHMGB3X",kd:"https://www.amazon.com/dp/B0HNHHMSB4"};
+  // Launch price: Kindle $2.99 through October 31, 2026, then back to $6.99 automatically.
+  var kindleLaunch=new Date()<new Date("2026-11-01T00:00:00-04:00");
+  if(kindleLaunch){document.querySelectorAll('[data-buy="kd"] strong').forEach(function(s){s.textContent="$2.99";});}
   var anyLive=false;
-  ["pb","hc","kd"].forEach(function(k){
-    var a=document.getElementById("buy-"+k);
+  var soons=document.querySelectorAll("[data-soon]");
+  var setSoon=function(t){soons.forEach(function(s){s.textContent=t;});};
+  document.querySelectorAll("[data-buy]").forEach(function(a){
+    var k=a.getAttribute("data-buy");
     if(links[k]){a.href=links[k];a.target="_blank";a.rel="noopener";anyLive=true;}
-    else{a.addEventListener("click",function(e){e.preventDefault();document.getElementById("soon").textContent="This edition is coming to Amazon in October 2026. Thank you for waiting.";});}
+    else{a.addEventListener("click",function(e){e.preventDefault();setSoon("This edition is coming to Amazon in October 2026. Thank you for waiting.");});}
   });
-  if(anyLive){document.getElementById("soon").textContent="Available now on Amazon. Kindle Unlimited included.";}
+  if(anyLive){setSoon(kindleLaunch?"Available now on Amazon. Launch price: Kindle $2.99 through October 31.":"Available now on Amazon. Kindle Unlimited included.");}
+  // Reading plan signup: opens an email to hello@ until a newsletter service (Kit) is connected.
+  document.getElementById("signup").addEventListener("submit",function(e){
+    e.preventDefault();
+    var em=document.getElementById("s-email").value.trim();
+    location.href="mailto:hello@beforeshewasourlady.com?subject="+encodeURIComponent("Send me the reading plan")+"&body="+encodeURIComponent("Please send the 33-day reading plan to: "+em);
+    document.getElementById("signup-note").textContent="Thank you. Your email program should have opened; press send and the plan is on its way.";
+  });
+  document.getElementById("copy-bulletin").addEventListener("click",function(){
+    var b=this;
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(document.getElementById("bulletin-text").textContent).then(function(){b.textContent="Copied.";});}
+  });
   var form=document.getElementById("order");
   form.addEventListener("submit",function(e){
     e.preventDefault();
