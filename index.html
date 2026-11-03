@@ -9,6 +9,18 @@
 <meta property="og:image" content="https://beforeshewasourlady.com/cover.jpg">
 <meta property="og:url" content="https://beforeshewasourlady.com/">
 <link rel="icon" href="favicon.png">
+<script>
+(function(){
+  var q=location.search, pref=null;
+  try{
+    if(/[?&]lang=en\b/.test(q)) localStorage.setItem('bswol-lang','en');
+    pref=localStorage.getItem('bswol-lang');
+  }catch(e){}
+  if(pref==='en' || /[?&]lang=en\b/.test(q)) return;
+  var l=(navigator.languages&&navigator.languages[0])||navigator.language||'';
+  if(/^it\b/i.test(l)) location.replace('it/'+location.hash);
+})();
+</script>
 <link rel="alternate" hreflang="en" href="https://beforeshewasourlady.com/">
 <link rel="alternate" hreflang="it" href="https://beforeshewasourlady.com/it/">
 <link rel="alternate" hreflang="x-default" href="https://beforeshewasourlady.com/">
@@ -164,7 +176,7 @@ footer a{color:var(--cream)}
 </head>
 <body>
 
-<nav class="lang" aria-label="Language"><div class="wrap"><span aria-current="page">English</span><span aria-hidden="true">·</span><a href="it/" hreflang="it" lang="it">Italiano</a></div></nav>
+<nav class="lang" aria-label="Language"><div class="wrap"><span aria-current="page">English</span><span aria-hidden="true">·</span><a href="it/" hreflang="it" lang="it" onclick="try{localStorage.setItem('bswol-lang','it')}catch(e){}">Italiano</a></div></nav>
 
 
 <header class="hero">
