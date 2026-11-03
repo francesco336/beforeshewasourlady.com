@@ -143,6 +143,10 @@ input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px soli
 footer{background:var(--night);color:#cfc6ad;padding-block:2.2rem;font-size:.95rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center}
 footer a{color:var(--cream)}
+.lang{background:var(--night-2);color:#cfc6ad;font-size:.9rem;padding-block:.5rem}
+.lang .wrap{display:flex;justify-content:flex-end;gap:.6rem}
+.lang a{color:var(--gold)}
+.lang [aria-current]{color:var(--cream)}
 
 @media (max-width:760px){
   .hero .wrap,.two,.author .two{grid-template-columns:1fr}
@@ -159,6 +163,8 @@ footer a{color:var(--cream)}
 </style>
 </head>
 <body>
+
+<nav class="lang" aria-label="Language"><div class="wrap"><span aria-current="page">English</span><span aria-hidden="true">·</span><a href="it/" hreflang="it" lang="it">Italiano</a></div></nav>
 
 
 <header class="hero">

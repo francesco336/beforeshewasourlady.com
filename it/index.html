@@ -161,11 +161,13 @@ footer a{color:var(--cream)}
 .lang{background:var(--night-2);color:#cfc6ad;font-size:.9rem;padding-block:.5rem}
 .lang .wrap{display:flex;justify-content:flex-end}
 .lang a{color:var(--gold)}
+.lang .wrap{gap:.6rem}
+.lang [aria-current]{color:var(--cream)}
 </style>
 </head>
 <body>
 
-<div class="lang"><div class="wrap"><a href="../" hreflang="en" lang="en">English edition</a></div></div>
+<nav class="lang" aria-label="Lingua"><div class="wrap"><a href="../" hreflang="en" lang="en">English</a><span aria-hidden="true">·</span><span aria-current="page">Italiano</span></div></nav>
 
 <header class="hero">
   <div class="wrap">
