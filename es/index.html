@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Antes de ser Nuestra Señora. La vida nunca contada de María de Nazaret, de Francesco Tamburriello. 33 capítulos breves, 8 ilustraciones, 8 Momentos de quietud. Próximamente en Amazon.">
+<meta property="og:title" content="Antes de ser Nuestra Señora">
+<meta property="og:description" content="En la Biblia habla seis veces. Este libro cuenta el resto.">
+<meta property="og:image" content="https://beforeshewasourlady.com/es/portada.jpg">
+<meta property="og:url" content="https://beforeshewasourlady.com/es/">
+<meta property="og:locale" content="es_US">
+<link rel="canonical" href="https://beforeshewasourlady.com/es/">
+<link rel="alternate" hreflang="en" href="https://beforeshewasourlady.com/">
+<link rel="alternate" hreflang="it" href="https://beforeshewasourlady.com/it/">
+<link rel="alternate" hreflang="es" href="https://beforeshewasourlady.com/es/">
+<link rel="alternate" hreflang="x-default" href="https://beforeshewasourlady.com/">
+<link rel="icon" href="../favicon.png">
+<title>Antes de ser Nuestra Señora</title>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Book","name":"Antes de ser Nuestra Señora: La vida nunca contada de María de Nazaret","author":{"@type":"Person","name":"Francesco Tamburriello"},"inLanguage":"es","image":"https://beforeshewasourlady.com/es/portada.jpg","url":"https://beforeshewasourlady.com/es/","translationOfWork":{"@type":"Book","name":"Before She Was Our Lady: The Untold Life of Mary of Nazareth","inLanguage":"en","url":"https://beforeshewasourlady.com/"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+/* Layout: phone first. A night-blue opening with the cover and the three Amazon buttons, then short cream pages like the book itself. Colors are the cover's. */
+:root{
+  --night:#17233d; --night-2:#0f1830; --cream:#f5efe1; --cream-2:#ece3cf; --paper:#fffdf7; --ink:#1e1a14; --ink-soft:#5a5244; --gold:#c6a24e; --gold-deep:#846718; --rule:#d9ceb4; --on-night:#f1ead8; --on-night-soft:#cfc6ad;
+  --display:"Cormorant Garamond","Garamond","Times New Roman",serif;
+  --body:"EB Garamond","Garamond","Georgia",serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:1.125rem;line-height:1.55}
+a{color:var(--gold-deep)}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.1;text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{max-width:66rem;margin:0 auto;padding-inline:max(18px,4vw)}
+.narrow{max-width:38rem;margin-inline:auto}
+.stack{display:grid;gap:1rem}
+.center{text-align:center}
+.eyebrow{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep)}
+.small{font-size:.95rem;color:var(--ink-soft)}
+[hidden]{display:none!important}
+
+/* Language bar */
+.lang{background:var(--night-2);color:var(--on-night-soft);font-size:.9rem;padding-block:.45rem}
+.lang .wrap{display:flex;justify-content:flex-end;gap:.6rem}
+.lang a{color:var(--gold)}
+.lang [aria-current]{color:var(--cream)}
+
+/* Amazon buttons: three equal buttons, always on one row */
+.buy{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;max-width:27rem;width:100%}
+.btn{display:flex;flex-direction:column;align-items:center;gap:.05rem;padding:.65rem .3rem .7rem;text-decoration:none;font-family:var(--body);background:var(--gold);color:var(--night);border:1px solid var(--gold);text-align:center;transition:background .15s,color .15s}
+.btn span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+.btn strong{font-family:var(--display);font-weight:700;font-size:1.35rem;line-height:1.1}
+.btn:hover,.btn:focus-visible{background:var(--cream);border-color:var(--cream);outline:none}
+.btn:focus-visible{outline:2px solid var(--cream);outline-offset:2px}
+.buy.light .btn{background:var(--night);border-color:var(--night);color:var(--cream)}
+.buy.light .btn span{color:var(--gold)}
+.buy.light .btn:hover,.buy.light .btn:focus-visible{background:var(--gold-deep);border-color:var(--gold-deep)}
+.buy.light .btn:hover span,.buy.light .btn:focus-visible span{color:var(--cream)}
+.buy.light .btn:focus-visible{outline-color:var(--night)}
+.buy.two{grid-template-columns:repeat(2,minmax(0,1fr));max-width:18rem}
+.buy.mid{margin-inline:auto}
+.where-buy{font-size:.95rem}
+
+/* Hero */
+.hero{background:radial-gradient(120% 90% at 70% 10%,#243457 0%,var(--night) 55%,var(--night-2) 100%);color:var(--cream);padding-block:1.4rem 2rem;text-align:center}
+.hero .wrap{display:grid;gap:1.1rem;justify-items:center}
+.hero img{width:min(46vw,190px);box-shadow:0 22px 44px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06)}
+.hero .text{display:grid;gap:.55rem;justify-items:center}
+.hero .eyebrow{color:var(--gold);display:none}
+.hero h1{font-size:clamp(2rem,8.4vw,4.2rem);font-weight:500}
+.hero h1 b{font-weight:700}
+.hero .sub{font-family:var(--display);font-style:italic;font-size:clamp(1.1rem,2.4vw,1.55rem);color:#e4dcc6}
+.hero .hook{font-size:clamp(1.15rem,2vw,1.35rem);color:var(--on-night);max-width:24rem;margin-top:.25rem}
+.hero .buy{margin-top:.6rem}
+.hero .where-buy{color:var(--on-night-soft)}
+.hero .where-buy a{color:var(--gold)}
+
+/* Sections */
+section{padding-block:clamp(2.4rem,6vw,4.2rem)}
+section+section{border-top:1px solid var(--rule)}
+h2{font-size:clamp(1.9rem,4vw,2.7rem)}
+.two{display:grid;gap:1.8rem}
+.two>*{min-width:0}
+
+/* The book */
+.facts{list-style:none;padding:0;margin:.4rem 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem 1.4rem}
+.facts li{border-top:1px solid var(--gold);padding-top:.5rem;font-size:1rem;line-height:1.4}
+.facts b{display:block;font-family:var(--display);font-weight:600;font-size:2.5rem;line-height:1;color:var(--gold-deep)}
+.plate{border:1px solid var(--rule);padding:.5rem;background:var(--cream-2);margin:0;max-width:26rem;justify-self:center}
+.plate figcaption{font-family:var(--display);font-style:italic;font-size:1.05rem;padding:.6rem .3rem .15rem;color:var(--ink-soft)}
+
+/* Readers (hidden until the first quotes arrive) */
+.quotes{display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));margin-top:1.4rem}
+.quotes blockquote{margin:0;padding-top:.8rem;border-top:1px solid var(--gold);font-family:var(--display);font-style:italic;font-size:1.3rem;line-height:1.3}
+.quotes cite{display:block;margin-top:.6rem;font-family:var(--body);font-style:normal;font-size:.95rem;color:var(--ink-soft)}
+
+/* First chapter */
+.chapter{background:var(--cream-2)}
+.chapter h3{font-size:clamp(1.7rem,3.5vw,2.3rem)}
+.chapter .where{font-style:italic;color:var(--ink-soft)}
+.read{display:grid;gap:1rem;text-align:left}
+.read>p:first-child::first-letter{font-family:var(--display);font-size:3.6em;float:left;line-height:.8;padding:.08em .08em 0 0;color:var(--night)}
+details.more>summary{list-style:none;cursor:pointer;justify-self:center;width:max-content;margin-inline:auto;padding:.6rem 1.2rem;border:1px solid var(--night);color:var(--night);font-size:1rem;background:transparent}
+details.more>summary::-webkit-details-marker{display:none}
+details.more>summary:hover,details.more>summary:focus-visible{background:var(--night);color:var(--cream);outline:none}
+details.more[open]>summary{display:none}
+details.more .read{margin-top:0}
+.verse{text-align:center;font-family:var(--display);font-style:italic;font-size:1.2rem;color:var(--night);margin-top:.6rem}
+.verse small{display:block;font-style:normal;font-family:var(--body);font-size:.9rem;letter-spacing:.1em;color:var(--ink-soft);margin-top:.3rem}
+
+/* Advent read-along */
+.advent{background:radial-gradient(120% 90% at 30% 0%,#243457 0%,var(--night) 60%,var(--night-2) 100%);color:var(--cream);text-align:center;border-top:0}
+.advent .eyebrow{color:var(--gold)}
+.advent p{color:#e4dcc6}
+.advent form{display:grid;gap:.6rem;max-width:30rem;width:100%;margin-inline:auto;text-align:left}
+.advent label{font-size:.95rem;color:var(--on-night-soft);display:grid;gap:.3rem}
+.advent .small{color:var(--on-night-soft)}
+input{font:inherit;padding:.65rem .7rem;border:1px solid var(--rule);background:var(--paper);color:var(--ink);width:100%;border-radius:0}
+input:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
+.send{font:inherit;cursor:pointer;border:0;padding:.75rem 1.3rem;background:var(--gold);color:var(--night);text-decoration:none;display:inline-block;text-align:center}
+.send:hover,.send:focus-visible{background:var(--cream);outline:none}
+.send.dark{background:var(--night);color:var(--cream)}
+.send.dark:hover,.send.dark:focus-visible{background:var(--gold-deep)}
+
+/* Christmas gift: one framed card, like a gift tag */
+.gift .card{border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:5px;background:var(--paper);padding:clamp(1.6rem,5vw,2.6rem) clamp(1.1rem,4vw,2.4rem);max-width:36rem;margin-inline:auto;text-align:center;justify-items:center}
+
+/* Parishes and groups */
+.prices{width:100%;border-collapse:collapse;font-size:1rem}
+.prices th,.prices td{text-align:left;padding:.5rem .4rem;border-bottom:1px solid var(--rule)}
+.prices th{font-weight:500;color:var(--ink-soft);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+.prices td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.kitlist{list-style:none;padding:0;margin:0;display:grid;gap:.55rem}
+.kitlist li{padding-left:1.3rem;position:relative}
+.kitlist li::before{content:"";position:absolute;left:0;top:.72em;width:.6rem;height:1px;background:var(--gold-deep)}
+.kitlist b{font-weight:500}
+.order{display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:center}
+.addr{user-select:all;color:var(--night)}
+.copy{font:inherit;font-size:.9rem;padding:.3rem .7rem;border:1px solid var(--gold-deep);background:transparent;color:var(--gold-deep);cursor:pointer}
+.copy:hover,.copy:focus-visible{background:var(--gold-deep);color:var(--cream);outline:none}
+details.fold{border-top:1px solid var(--rule)}
+details.fold:last-of-type{border-bottom:1px solid var(--rule)}
+details.fold>summary{cursor:pointer;padding:.75rem 0;color:var(--night);font-weight:500}
+details.fold>summary:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+details.fold .in{padding:0 0 1rem;display:grid;gap:.7rem;font-size:1rem}
+details.fold ol{margin:0;padding-left:1.2rem;display:grid;gap:.5rem}
+.qm-q{font-family:var(--display);font-style:italic;font-size:1.3rem;color:var(--night)}
+.folds{display:grid}
+
+/* Author */
+.author img{border-radius:50%;width:min(52vw,220px);margin-inline:auto;box-shadow:0 10px 30px rgba(23,35,61,.25)}
+
+/* Closing */
+.closing{background:var(--cream-2);text-align:center}
+.closing .stack{justify-items:center}
+
+/* Footer */
+footer{background:var(--night);color:var(--on-night-soft);padding-block:2rem 5.6rem;font-size:.92rem}
+footer .wrap{display:grid;gap:.5rem}
+footer a{color:var(--cream)}
+
+/* Buy bar on phones: appears when no Amazon buttons are on screen */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--night-2);border-top:1px solid var(--gold);padding:.45rem max(10px,env(safe-area-inset-left,0px)) calc(.45rem + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.4rem}
+.bar a{display:block;text-align:center;text-decoration:none;background:var(--gold);color:var(--night);padding:.42rem .2rem;font-size:.82rem;line-height:1.15}
+.bar a b{display:block;font-family:var(--display);font-size:1.12rem}
+
+@media (min-width:761px){
+  .bar{display:none}
+  footer{padding-block:2.2rem}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.8rem 2rem;justify-content:space-between}
+  .hero{text-align:left;padding-block:clamp(2.6rem,5vw,4.4rem)}
+  .hero .wrap{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(2rem,5vw,4rem);align-items:center;justify-items:start}
+  .hero img{width:min(100%,340px);justify-self:center}
+  .hero .text{justify-items:start;gap:.7rem}
+  .hero .eyebrow{display:block}
+  .hero h1 b{display:block}
+  .hero .hook{max-width:30rem}
+  .hero .buy{margin-top:1rem}
+  .two{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(2rem,5vw,4rem);align-items:start}
+  .author .two{grid-template-columns:minmax(0,.5fr) minmax(0,1.5fr);align-items:center}
+  .author img{width:min(100%,240px)}
+  .advent form{grid-template-columns:minmax(0,1fr) auto;align-items:end}
+}
+@media (prefers-reduced-motion:no-preference){
+  .hero img{animation:rise 1s ease-out both}
+  @keyframes rise{from{opacity:.4;transform:translateY(12px)}to{opacity:1;transform:none}}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Edición en español: todavía no está en Amazon */
+.soon-line{font-size:1rem;color:var(--on-night-soft);max-width:26rem}
+.hero .send{margin-top:.5rem;font-size:1.1rem;padding:.8rem 1.6rem}
+.hero .where-buy a{white-space:nowrap}
+.gift .btn span{letter-spacing:.03em}
+</style>
+</head>
+<body>
+
+<nav class="lang" aria-label="Idioma"><div class="wrap"><a href="../?lang=en" hreflang="en" lang="en">English</a><span aria-hidden="true">·</span><a href="../it/" hreflang="it" lang="it">Italiano</a><span aria-hidden="true">·</span><span aria-current="page">Español</span></div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <img src="portada.jpg" width="900" height="1391" alt="Portada de Antes de ser Nuestra Señora: María joven, con un manto azul y un huso en la mano, en la puerta de una casa de piedra, de noche">
+    <div class="text">
+      <p class="eyebrow">Un libro de Francesco Tamburriello</p>
+      <h1>Antes de ser <b>Nuestra Señora</b></h1>
+      <p class="sub">La vida nunca contada de María de Nazaret</p>
+      <p class="hook">En la Biblia habla seis veces. Este libro cuenta el resto.</p>
+      <a class="send" href="#aviso">Avísame cuando salga</a>
+      <p class="soon-line">Próximamente en Amazon, en tapa blanda, tapa dura y Kindle.</p>
+      <p class="where-buy">¿Lees en inglés? <a href="#ingles">La edición en inglés ya está en Amazon</a></p>
+    </div>
+  </div>
+</header>
+
+<section class="book" id="libro">
+  <div class="wrap two">
+    <div class="stack">
+      <p class="eyebrow">El libro</p>
+      <h2>No una estatua. Una mujer.</h2>
+      <p>Antes de las estatuas, antes de los títulos, antes de las fiestas, María era una muchacha en un pueblo en el que nadie se fijaba. Tenía miedo. Trabajaba con sus manos. Enterró a sus padres y a su marido. Esperó, no siempre entendió, y dijo que sí de todos modos.</p>
+      <p>Esta es su vida, desde una casa en las afueras de Nazaret hasta un cuarto en Jerusalén después de la Pascua.</p>
+      <ul class="facts">
+        <li><b>33</b>capítulos breves, de unos diez minutos cada uno. Cada uno termina con un versículo.</li>
+        <li><b>8</b>ilustraciones a página completa, una al final de cada parte.</li>
+        <li><b>8</b>Momentos de quietud, con tres preguntas para la oración a solas o en grupo.</li>
+        <li><b>12</b>cosas que nadie te ha dicho de ella, y una Nota sobre las fuentes.</li>
+      </ul>
+    </div>
+    <figure class="plate">
+      <img src="../plate1.jpg" width="672" height="900" loading="lazy" alt="Ilustración: en la puerta de una casa de piedra en Nazaret una niña le da un ovillo a otra niña, mientras su madre mira desde la entrada">
+      <figcaption>Una de las ocho ilustraciones.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="chapter" id="capitulo">
+  <div class="wrap">
+    <div class="narrow stack">
+      <div class="stack center" style="gap:.4rem">
+        <p class="eyebrow">Lee el primer capítulo</p>
+        <h3>Capítulo 1: La casa de las afueras</h3>
+        <p class="where">María, recién nacida. Nazaret.</p>
+      </div>
+      <div class="read">
+        <p>La casa estaba en las afueras de Nazaret, con muros de piedra del mismo color que las colinas de alrededor, tan cerca de los campos que en verano el olor del trigo entraba por la puerta abierta.</p>
+        <p>Los dolores de parto de Ana empezaron en la noche. Cuando el cielo se puso gris sobre las colinas, todavía no habían terminado. Luego el sol asomó por encima de la loma, y desde la casa se oyó un llanto, pequeño y claro. Joaquín esperaba afuera, con las manos juntas. Antes de que nadie se lo dijera, supo que su hija había nacido.</p>
+      </div>
+      <details class="more" id="ch1">
+        <summary>Sigue leyendo</summary>
+        <div class="read">
+          <p>Se quedó allí, respirando, como si necesitara estar seguro de que aquel sonido era real.</p>
+          <p>Cuando lo dejaron entrar, Ana tenía la cara mojada y sostenía a la niña contra el hombro. Joaquín se arrodilló junto a la cama y, sin saber qué hacer con las manos, tomó el borde de la manta y lo acomodó.</p>
+          <p>«¿Cómo la llamamos?», preguntó Ana.</p>
+          <p>«María», dijo Joaquín. Habían elegido ese nombre años atrás, sin saber si algún día lo iban a necesitar.</p>
+          <p>Al mediodía los vecinos ya estaban en la puerta. Entraban a ver a la recién nacida y se quedaban más de lo que tenían pensado, hablando muy poco.</p>
+          <p>Nadie en Nazaret preguntó por qué un matrimonio lloraba tanto por una sola hija. No sabían que Joaquín había salido una vez del Templo con dos corderos todavía en los brazos.</p>
+        </div>
+      </details>
+      <p class="small center">Quedan treinta y dos capítulos.</p>
+      <p class="center"><a class="send dark" href="#aviso">Avísame cuando salga</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="advent" id="aviso">
+  <div class="wrap">
+    <div class="narrow stack">
+      <p class="eyebrow">Próximamente</p>
+      <h2>Te aviso el día que salga.</h2>
+      <p>Deja tu correo y te escribo cuando la edición en español esté en Amazon, en tapa blanda, tapa dura y Kindle.</p>
+      <form id="signup" method="post">
+        <label for="s-email">Tu correo <input id="s-email" name="email_address" type="email" required autocomplete="email"></label>
+        <button class="send" type="submit">Avísame</button>
+      </form>
+      <p class="small" id="signup-note" role="status">Nada de publicidad. Un solo correo, el día que salga.</p>
+    </div>
+  </div>
+</section>
+
+<section class="gift" id="ingles">
+  <div class="wrap">
+    <div class="card stack">
+      <p class="eyebrow">Ya disponible en inglés</p>
+      <h2 lang="en">Before She Was Our Lady</h2>
+      <p>Si lees en inglés, o quieres regalarlo esta Navidad, la edición en inglés ya está en Amazon.</p>
+      <div class="buy light" data-pos="english">
+        <a class="btn" data-buy="pb" href="https://www.amazon.com/dp/B0HNHNNSDR" target="_blank" rel="noopener"><span>Tapa blanda</span><strong>$16.99</strong></a>
+        <a class="btn" data-buy="hc" href="https://www.amazon.com/dp/B0HNHMGB3X" target="_blank" rel="noopener"><span>Tapa dura</span><strong>$24.99</strong></a>
+        <a class="btn" data-buy="kd" href="https://www.amazon.com/dp/B0HNHHMSB4" target="_blank" rel="noopener"><span>Kindle</span><strong>$6.99</strong></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="author" id="autor">
+  <div class="wrap two">
+    <img src="../author.jpg" width="700" height="700" loading="lazy" alt="Francesco Tamburriello sonriendo, al aire libre, bajo un cielo luminoso">
+    <div class="stack">
+      <p class="eyebrow">El autor</p>
+      <h2>Francesco Tamburriello</h2>
+      <p>Nació en Turín, Italia, en el seno de una familia católica. Después de una peregrinación a Lourdes con su hija en 2019, no pudo dejar de pensar en María como una mujer real. Este libro es el resultado. Vive en Sarasota, Florida.</p>
+      <p><a href="https://www.instagram.com/before_she_was_our_lady/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/profile.php?id=61595425618536" target="_blank" rel="noopener">Facebook</a> · <a href="mailto:hello@beforeshewasourlady.com">hello@beforeshewasourlady.com</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <div class="stack">
+      <p class="eyebrow">Antes de ser Nuestra Señora</p>
+      <h2>Conócela tal como era.</h2>
+      <a class="send dark" href="#aviso">Avísame cuando salga</a>
+      <p class="small">Próximamente en Amazon. <a href="#ingles">La edición en inglés ya está disponible</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Antes de ser Nuestra Señora. La vida nunca contada de María de Nazaret. Copyright 2026 Francesco Tamburriello, Sarasota, Florida.</div>
+    <div>Edición en español de <a href="../?lang=en" hreflang="en" lang="en"><i>Before She Was Our Lady</i></a>.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* SETTINGS: same block as the English home page. */
+  var CFG={"prefix": "es-", "attribution": {"pb": "", "hc": "", "kd": ""}, "counter": "beforeshewasourlady", "kitForm": "", "copied": "Copiado.", "signup": {"event": "signup-aviso", "subject": "Avísame cuando salga Antes de ser Nuestra Señora", "body": "Por favor, avísenme cuando salga la edición en español. Mi correo: ", "done": "Gracias. Se debió abrir tu programa de correo: presiona enviar y listo.", "sending": "Enviando...", "confirm": "Gracias. Revisa tu correo y confirma tu dirección."}};
+  var $=function(s){return Array.prototype.slice.call(document.querySelectorAll(s));};
+  var byId=function(i){return document.getElementById(i);};
+  if(CFG.counter){
+    var gc=document.createElement("script");
+    gc.async=true;gc.src="https://gc.zgo.at/count.js";
+    gc.setAttribute("data-goatcounter","https://"+CFG.counter+".goatcounter.com/count");
+    document.head.appendChild(gc);
+  }
+  var track=function(name){
+    name=CFG.prefix+name;
+    try{if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:name,title:name,event:true});}}catch(e){}
+  };
+  $("[data-buy]").forEach(function(a){
+    var k=a.getAttribute("data-buy");
+    if(CFG.attribution[k]){a.href=CFG.attribution[k];}
+    var box=a.closest("[data-pos]");
+    var pos=box?box.getAttribute("data-pos"):"page";
+    a.addEventListener("click",function(){track("amazon-"+k+"-"+pos);});
+  });
+  var bar=byId("bar");
+  if(bar&&"IntersectionObserver" in window){
+    var blocks=$(".buy");
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){e.target.onScreen=e.isIntersecting;});
+      bar.hidden=blocks.some(function(b){return b.onScreen;});
+    });
+    blocks.forEach(function(b){io.observe(b);});
+  }
+  var form=byId("signup"), note=byId("signup-note");
+  if(form){
+    if(CFG.kitForm){form.action="https://app.kit.com/forms/"+CFG.kitForm+"/subscriptions";}
+    form.addEventListener("submit",function(e){
+      e.preventDefault();
+      var em=byId("s-email").value.trim();
+      track(CFG.signup.event);
+      if(!CFG.kitForm){
+        location.href="mailto:hello@beforeshewasourlady.com?subject="+encodeURIComponent(CFG.signup.subject)+"&body="+encodeURIComponent(CFG.signup.body+em);
+        note.textContent=CFG.signup.done;
+        return;
+      }
+      note.textContent=CFG.signup.sending;
+      fetch(form.action,{method:"POST",body:new FormData(form),headers:{Accept:"application/json"}})
+        .then(function(r){if(!r.ok){throw new Error("kit");}form.hidden=true;note.textContent=CFG.signup.confirm;})
+        .catch(function(){form.submit();});
+    });
+  }
+  if(byId("order-link")){byId("order-link").addEventListener("click",function(){track("group-email");});}
+  var copy=function(btn,el){
+    if(!btn||!el){return;}
+    btn.addEventListener("click",function(){
+      var done=function(){btn.textContent=CFG.copied;};
+      var select=function(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);};
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(el.textContent).then(done,select);}else{select();}
+    });
+  };
+  copy(byId("copy-email"),byId("order-email"));
+  copy(byId("copy-bulletin"),byId("bulletin-text"));
+  if(byId("ch1")){byId("ch1").addEventListener("toggle",function(){if(this.open){track("chapter-1-open");}});}
+})();
+</script>
+
+</body>
+</html>
